@@ -1,0 +1,81 @@
+body {
+  margin: 20px 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(207, 232, 15);
+  font-family: cursive;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul li {
+  list-style: none;
+  margin: 15px 80px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(28, 26, 26);
+}
+.homeAbout h1 {
+  text-decoration: underline;
+  margin: 30px;
+}
+.homeAbout p {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.equity {
+  display: flex;
+}
+.container h1 {
+  text-decoration: underline;
+}
+.container,
+.container2 {
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: white;
+  width: 40vw;
+  margin: 25px 25px;
+}
+
+.container input,
+.container2 input {
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 100%;
+  margin: 10px;
+}
+.container label,
+.container2 label {
+  font-size: 1.5rem;
+}
+.container p,
+.container2 p {
+  font-size: 1.2rem;
+}
+#npl {
+  box-shadow: 10px 2px;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+}
+#dNpl {
+  box-shadow: 10px 2px;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+}

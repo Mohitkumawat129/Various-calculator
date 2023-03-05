@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div class="homeAbout">
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illo
+        magnam porro hic officiis quod odio repellendus praesentium ab, nostrum
+        autem dicta eos ex officia. Minus similique est ex doloremque quaerat
+        pariatur cum excepturi quas voluptas, dolorum nemo eveniet deserunt
+        velit eligendi. Totam animi, temporibus laudantium nostrum minima, atque
+        cumque unde placeat voluptatibus incidunt, iure voluptatem distinctio
+        eum porro dicta deleniti? Nam inventore ratione dolore perspiciatis. Aut
+        soluta laboriosam provident dolor earum eveniet recusandae quasi ipsam
+        quia, corrupti minus deleniti nihil ut. Quaerat non quasi pariatur saepe
+        corrupti! Cum perspiciatis accusamus eaque, neque blanditiis quisquam.
+        Nisi reprehenderit temporibus dolorum hic?
+      </p>
+      <h1>About us</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
+        cumque! Voluptas, quam rem quia iste voluptate ullam deleniti quos
+        corrupti porro, saepe magnam dolores, ipsam nostrum distinctio veritatis
+        aperiam eum eos similique eius tenetur magni. Dignissimos illo quibusdam
+        minus blanditiis sit? Suscipit, facere quas? Dicta explicabo expedita
+        dignissimos quidem quisquam quae soluta placeat! Rem perferendis nostrum
+        quae alias dolorum id iusto similique, praesentium inventore eaque
+        voluptates. Autem id beatae, nihil delectus reiciendis ullam. Quo culpa
+        molestiae illum earum sequi obcaecati fuga ipsa est distinctio ea? Totam
+        repudiandae ipsum ratione! Possimus commodi a voluptate, nihil nulla
+        ipsa, harum distinctio maiores doloremque odit itaque, expedita deleniti
+        voluptatibus debitis? Aut neque, mollitia veritatis dicta repudiandae
+        amet deleniti doloremque, corporis quos expedita harum minima enim,
+        ratione molestias in eius unde perspiciatis. Ullam numquam iusto quidem
+        error unde cupiditate deserunt consequuntur id! Vitae, qui distinctio,
+        ratione necessitatibus eveniet ipsam nemo, fugiat ea quam soluta
+        tempore!
+      </p>
+    </div>
+    <br /><br /><br />
+    <div class="box">
+      <h1>BROKERAGE CALCULATOR:</h1>
+      <div class="equity">
+        <div class="container">
+          <h1>INTRADAY</h1>
+          <label for="name">Name of share:</label>
+          <input onchange="iCustom()" type="text" id="name" />
+          <br />
+          <label for="bPrice">Buying price:</label>
+          <input
+            onchange="iCustom()"
+            type="number"
+            id="bPrice"
+            min="0.1"
+            value="100"
+          />
+          <br />
+          <label for="sPrice">Selling price:</label>
+          <input
+            onchange="iCustom()"
+            type="number"
+            id="sPrice"
+            min="0.1"
+            value="110"
+          />
+          <br />
+          <label for="quantity">Quantity:</label>
+          <input
+            onchange="iCustom()"
+            type="number"
+            id="quantity"
+            min="1"
+            value="20"
+          />
+          <p id="turnover">Turnover:</p>
+          <p id="brokerage">Brokerage:</p>
+          <p id="tax">Tax & Oters:</p>
+          <p id="npl">Net P&L:</p>
+        </div>
+        <div class="container2">
+          <h1>DELIVERY</h1>
+          <label for="name">Name of share:</label>
+          <input onchange="iCustom()" type="text" id="name" />
+          <br />
+          <label for="dBPrice">Buying price:</label>
+          <input
+            onchange="dCustom()"
+            type="number"
+            id="dBPrice"
+            min="0.1"
+            value="100"
+          />
+          <br />
+          <label for="dSPrice">Selling price:</label>
+          <input
+            onchange="dCustom()"
+            type="number"
+            id="dSPrice"
+            min="0.1"
+            value="110"
+          />
+          <br />
+          <label for="dQuantity">Quantity:</label>
+          <input
+            onchange="dCustom()"
+            type="number"
+            id="dQuantity"
+            min="1"
+            value="20"
+          />
+          <p id="dTurnover">Turnover:</p>
+          <p id="dBrokerage">Brokerage:</p>
+          <p id="dTax">Tax & Oters:</p>
+          <p id="dNpl">Net P&L:</p>
+        </div>
+      </div>
+      <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="container">
+        <h1>EMI CALCULATOR</h1>
+        <label for="amount">Loan amount:</label>
+        <input
+          onchange="eCustom()"
+          type="number"
+          id="amount"
+          min="1"
+          value="10000"
+        />
+        <br />
+        <label for="tenure">Loan Tenure:</label>
+        <input
+          onchange="eCustom()"
+          type="number"
+          id="tenure"
+          min="6"
+          max="48"
+          value="12"
+        />
+        <br />
+        <label for="iRate">Interest rate:</label>
+        <input
+          onchange="eCustom()"
+          type="number"
+          id="iRate"
+          min="0"
+          max="100"
+          value="9.5"
+          step="0.1"
+        />
+        <br />
+        <p id="emi">Monthly Payment:</p>
+        <p id="principal">Principal amount</p>
+        <p id="tInterest">Total Interest</p>
+        <p id="tAmount">Total amount</p>
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="container">
+        <h1>Temperature Converter</h1>
+        <label for="celcius">Celcius:</label>
+        <input type="number" id="celcius" onchange="custom2()" />
+        <br />
+        <label for="kelvin">Kelvin:</label>
+        <input type="number" id="kelvin" onchange="custom2()" />
+        <br />
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" onchange="custom2()" />
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>
